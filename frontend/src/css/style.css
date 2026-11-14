@@ -1,0 +1,151 @@
+/*importing google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  /*colors*/
+  --white-color: #fff;
+  --dark-color:#252525;
+  --primary-color:#3b141c;
+  --secondary-color:#f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color:#ccc;
+
+  /* fontsize*/
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /*font weight*/
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /*border raddius*/
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /*site max width*/
+  --site-max-width: 1300px;
+}
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
+}
+header {
+  background: #d7f2da
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+  border: none;
+  background: rgb(46, 117, 46);
+  padding: 10px;
+  border-radius: 7px;
+}
+button .hero-section .learn {
+  cursor: pointer;
+  border: none;
+  background: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+header .navbar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content:space-between;
+}
+.navbar .nav-logo .logo-text {
+  color:black;
+  padding: 40px 30x;
+  font-size: 30px;
+  font-weight: var(--font-weight-semibold);
+}
+.navbar .nav-menu {
+  display: flex;
+  gap: 30px;
+}
+.navbar .nav-menu .nav-link {
+  padding: 8px 17px;
+  font-size: var(--white-color);
+  color: black;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover {
+  background: rgb(64, 148, 64);
+}
+.navbar .nav-button {
+  color: white;
+  padding: 20px ;
+}
+.hero-section {
+  background-color: white;
+  padding: 100px 100px
+}
+.hero-section .heading {
+  font-size: 60px;
+}
+.hero-section .heading .highlight {
+  color: rgb(46, 117, 46);
+}
+.hero-section .desc {
+  font-size: 18px;
+  padding: 7px
+}
+.hero-section .login {
+  color: white;
+  padding: 20px;
+}
+.hero-section .learn-more {
+  border-color: rgb(46, 117, 46);
+  border-radius: 2%;
+  color: black;
+  padding: 20px; 
+}
+
+
+
+.feature-section {
+  background-color: white;
+  padding: 40px 60px;
+}
+
+.feature-section .feature-container {
+  max-width: var(--site-max-width);
+  margin:0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 25px;
+}
+
+.feature-section .feature-container .feature-item {
+  display:flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  padding: 10px 15px;
+  border-right: 1px solid #ccc;
+}
+
