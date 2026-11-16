@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Flow | Members</title>
+
+    <link rel="stylesheet" href="../css/members.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+<div class="dashboard">
+
+    <!-- SIDEBAR: SAME AS WORKSPACE / TASKS / ANALYTICS / ACTIVITY -->
+    <aside class="sidebar">
+        <h2 class="logo">
+            <i class="fa-solid fa-circle-nodes"></i>
+            Orbit Flow
+        </h2>
+
+        <nav class="sidebar-items">
+            <ul>
+                <li class="item-list">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="workspace.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Workspaces
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="projects.html">
+                        <i class="fa-regular fa-folder"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="tasks.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        Tasks
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="analytics.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Analytics
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="activity.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        Activity
+                    </a>
+                </li>
+
+                <li class="item-list active">
+                    <a href="members.html">
+                        <i class="fa-solid fa-users"></i>
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div class="page-heading">
+                <h1 class="page-title">Members</h1>
+                <p>Manage team members in <strong>Product Team.</strong></p>
+            </div>
+
+            <div class="top-actions">
+                <button class="add-member-btn" id="addMemberBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Member
+                </button>
+                <button class="top-noti" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-pic" aria-label="Profile">
+                    TS
+                </button>
+            </div>
+        </header>
+
+        <!-- MEMBERS TABLE -->
+        <section class="members-table-wrapper">
+            <table class="members-table">
+                <thead>
+                    <tr>
+                        <th class="member-heading">Member</th>
+                        <th>Role</th>
+                        <th>Projects</th>
+                        <th>Tasks</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="membersTableBody">
+                    <tr>
+                        <td class="member-cell">
+                            <div class="member-info">
+                                <div class="member-avatar avatar-riya">RS</div>
+                                <div>
+                                    <h3>Riya Singh</h3>
+                                    <p>riya@orbitflow.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="role-badge member-role">Member</span></td>
+                        <td class="number-cell">3</td>
+                        <td class="number-cell">12</td>
+                        <td class="action-cell">
+                            <button class="more-btn" aria-label="Actions for Riya Singh"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="member-cell">
+                            <div class="member-info">
+                                <div class="member-avatar avatar-aarav">AA</div>
+                                <div>
+                                    <h3>Aarav Anand</h3>
+                                    <p>aarav@orbitflow.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="role-badge member-role">Member</span></td>
+                        <td class="number-cell">3</td>
+                        <td class="number-cell">10</td>
+                        <td class="action-cell">
+                            <button class="more-btn" aria-label="Actions for Aarav Anand"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="member-cell">
+                            <div class="member-info">
+                                <div class="member-avatar avatar-neha">NK</div>
+                                <div>
+                                    <h3>Neha Kulkarni</h3>
+                                    <p>neha@orbitflow.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="role-badge admin-role">Admin</span></td>
+                        <td class="number-cell">4</td>
+                        <td class="number-cell">16</td>
+                        <td class="action-cell">
+                            <button class="more-btn" aria-label="Actions for Neha Kulkarni"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="member-cell">
+                            <div class="member-info">
+                                <div class="member-avatar avatar-aditya">AP</div>
+                                <div>
+                                    <h3>Aditya Patil</h3>
+                                    <p>aditya@orbitflow.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="role-badge member-role">Member</span></td>
+                        <td class="number-cell">2</td>
+                        <td class="number-cell">6</td>
+                        <td class="action-cell">
+                            <button class="more-btn" aria-label="Actions for Aditya Patil"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    // Sample UI interaction. Connect this button to your Add Member form/API later.
+    document.getElementById("addMemberBtn").addEventListener("click", function () {
+        alert("Connect this button to your Add Member form.");
+    });
+
+    // Basic action menu placeholder for each member.
+    document.querySelectorAll(".more-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            alert("Member actions can be connected here.");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Flow | Activity</title>
+
+    <link rel="stylesheet" href="../css/activity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+<div class="dashboard">
+
+    <!-- SIDEBAR: SAME AS WORKSPACE / TASKS / ANALYTICS -->
+    <aside class="sidebar">
+        <h2 class="logo">
+            <i class="fa-solid fa-circle-nodes"></i>
+            Orbit Flow
+        </h2>
+
+        <nav class="sidebar-items">
+            <ul>
+                <li class="item-list">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="workspace.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Workspaces
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="projects.html">
+                        <i class="fa-regular fa-folder"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="tasks.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        Tasks
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="analytics.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Analytics
+                    </a>
+                </li>
+
+                <li class="item-list active">
+                    <a href="activity.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        Activity
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="members.html">
+                        <i class="fa-solid fa-users"></i>
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div class="page-heading">
+                <h1 class="page-title">Activity</h1>
+                <p>Recent actions across your workspaces and projects.</p>
+            </div>
+
+            <div class="top-actions">
+                <button class="top-noti" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-pic" aria-label="Profile">
+                    TS
+                </button>
+            </div>
+        </header>
+
+        <!-- ACTIVITY FILTER -->
+        <section class="activity-toolbar">
+            <select class="project-filter" id="projectFilter" aria-label="Filter activities by project">
+                <option value="all">All Projects</option>
+                <option value="website-redesign">Website Redesign</option>
+            </select>
+        </section>
+
+        <!-- ACTIVITY TIMELINE -->
+        <section class="activity-list" id="activityList">
+
+            <article class="activity-item" data-project="website-redesign">
+                <div class="activity-icon file-icon">
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+
+                <div class="activity-content">
+                    <div class="activity-main">
+                        <div class="activity-description">
+                            <h2><strong>Riya Singh</strong> updated task status to <span class="status-progress">In Progress</span></h2>
+                            <p>Build navbar component <span class="separator">•</span> <span class="project-name">Website Redesign</span></p>
+                        </div>
+                        <time datetime="10:24">10:24 AM</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="activity-item" data-project="website-redesign">
+                <div class="activity-icon comment-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+
+                <div class="activity-content">
+                    <div class="activity-main">
+                        <div class="activity-description">
+                            <h2><strong>Aarav Anand</strong> commented on a task</h2>
+                            <p class="comment-text">Looks good! Please also add the mobile menu.</p>
+                            <p>Build navbar component <span class="separator">•</span> <span class="project-name">Website Redesign</span></p>
+                        </div>
+                        <time datetime="14:17">2:17 PM</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="activity-item" data-project="website-redesign">
+                <div class="activity-icon create-icon">
+                    <i class="fa-regular fa-clipboard"></i>
+                </div>
+
+                <div class="activity-content">
+                    <div class="activity-main">
+                        <div class="activity-description">
+                            <h2><strong>Neha Kulkarni</strong> created a new task</h2>
+                            <p>Create UI components <span class="separator">•</span> <span class="project-name">Website Redesign</span></p>
+                        </div>
+                        <time datetime="11:02">11:02 AM</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="activity-item" data-project="website-redesign">
+                <div class="activity-icon complete-icon">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+
+                <div class="activity-content">
+                    <div class="activity-main">
+                        <div class="activity-description">
+                            <h2><strong>Riya Singh</strong> completed a task</h2>
+                            <p>Create initial wireframes <span class="separator">•</span> <span class="project-name">Website Redesign</span></p>
+                        </div>
+                        <time>Yesterday</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="activity-item" data-project="website-redesign">
+                <div class="activity-icon update-icon">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+
+                <div class="activity-content">
+                    <div class="activity-main">
+                        <div class="activity-description">
+                            <h2><strong>Aarav Anand</strong> updated the project progress to <strong>80%</strong></h2>
+                            <p><span class="project-name">Website Redesign</span></p>
+                        </div>
+                        <time>Yesterday</time>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <p class="empty-state" id="emptyState" hidden>No activities found for this project.</p>
+
+    </main>
+</div>
+
+<script>
+    const projectFilter = document.getElementById("projectFilter");
+    const activityItems = document.querySelectorAll(".activity-item");
+    const emptyState = document.getElementById("emptyState");
+
+    projectFilter.addEventListener("change", function () {
+        const selectedProject = this.value;
+        let visibleCount = 0;
+
+        activityItems.forEach(item => {
+            const matches = selectedProject === "all" ||
+                item.dataset.project === selectedProject;
+
+            item.hidden = !matches;
+
+            if (matches) {
+                visibleCount++;
+            }
+        });
+
+        emptyState.hidden = visibleCount !== 0;
+    });
+</script>
+</body>
+</html>

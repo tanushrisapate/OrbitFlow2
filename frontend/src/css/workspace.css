@@ -182,7 +182,7 @@ body {
     align-items: center;
     gap: 20px;
 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .top-noti {
@@ -226,26 +226,37 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 2px;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-top: 40px;
     margin-bottom: 25px;
 }
 
 .heading-text {
+
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.heading-text h1 {
-    font-size: 1.8rem;
+.topic {
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-dark);
 }
 
-.heading-text p {
+.heading p {
     color: var(--text-grey);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
-
 
 /* NEW WORKSPACE BUTTON */
 

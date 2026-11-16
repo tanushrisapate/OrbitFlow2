@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Flow | Tasks</title>
+
+    <link rel="stylesheet" href="../css/tasks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+<div class="dashboard">
+
+    <!-- SIDEBAR: same structure and styling as workspace page -->
+    <aside class="sidebar">
+        <h2 class="logo">
+            <i class="fa-solid fa-circle-nodes"></i>
+            Orbit Flow
+        </h2>
+
+        <nav class="sidebar-items">
+            <ul>
+                <li class="item-list">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="workspace.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Workspaces
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="projects.html">
+                        <i class="fa-regular fa-folder"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li class="item-list active">
+                    <a href="tasks.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        Tasks
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="analytics.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Analytics
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="activity.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        Activity
+                    </a>
+                </li>
+
+                <li class="item-list">
+                    <a href="members.html">
+                        <i class="fa-solid fa-users"></i>
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1 class="page-title">Tasks</h1>
+
+            <div class="top-actions">
+                <button class="top-noti" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-pic" aria-label="Profile">
+                    TS
+                </button>
+            </div>
+        </header>
+
+        <!-- PROJECT FILTER AND TASK ACTIONS -->
+        <section class="task-toolbar">
+            <div class="project-filter">
+                <label for="projectSelect">Project:</label>
+                <select id="projectSelect">
+                    <option>Website Redesign</option>
+                    <option>Orbit Flow</option>
+                    <option>AI Dashboard</option>
+                </select>
+            </div>
+
+            <div class="toolbar-actions">
+                <div class="view-options" aria-label="Task view">
+                    <button class="view-btn active" id="kanbanView">
+                        <i class="fa-solid fa-table-columns"></i>
+                        Kanban
+                    </button>
+                    <button class="view-btn" id="listView">
+                        <i class="fa-solid fa-list"></i>
+                        List
+                    </button>
+                </div>
+
+                <button class="new-task-btn" id="newTaskBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    New Task
+                </button>
+            </div>
+        </section>
+
+        <!-- KANBAN BOARD -->
+        <section class="kanban-board" id="kanbanBoard">
+
+            <!-- TO DO -->
+            <div class="task-column todo-column">
+                <div class="column-heading">
+                    <h2>To Do <span>(5)</span></h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <article class="task-card">
+                    <h3>Design new homepage</h3>
+                    <span class="priority high">High</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 10</span>
+                        <span class="assignee">AS</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3>Add pricing section</h3>
+                    <span class="priority medium">Medium</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 12</span>
+                        <span class="assignee">RK</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3>Create UI components</h3>
+                    <span class="priority low">Low</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 14</span>
+                        <span class="assignee">PS</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- IN PROGRESS -->
+            <div class="task-column progress-column">
+                <div class="column-heading">
+                    <h2>In Progress <span>(3)</span></h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <article class="task-card">
+                    <h3>Build navbar component</h3>
+                    <span class="priority high">High</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 16</span>
+                        <span class="assignee">NK</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3>Integrate API endpoints</h3>
+                    <span class="priority medium">Medium</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 17</span>
+                        <span class="assignee">AK</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- REVIEW -->
+            <div class="task-column review-column">
+                <div class="column-heading">
+                    <h2>Review <span>(2)</span></h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <article class="task-card">
+                    <h3>Update copy and content</h3>
+                    <span class="priority medium">Medium</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 18</span>
+                        <span class="assignee">RM</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3>Fix responsive layout</h3>
+                    <span class="priority low">Low</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 18</span>
+                        <span class="assignee">PS</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- DONE -->
+            <div class="task-column done-column">
+                <div class="column-heading">
+                    <h2>Done <span>(4)</span></h2>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <article class="task-card">
+                    <h3>Set up project structure</h3>
+                    <span class="priority low">Low</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 3</span>
+                        <span class="assignee">AS</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3>Create initial wireframes</h3>
+                    <span class="priority medium">Medium</span>
+                    <div class="task-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Nov 5</span>
+                        <span class="assignee">NK</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- LIST VIEW -->
+        <section class="task-list-view" id="taskListView" hidden>
+            <div class="list-header">
+                <span>Task</span>
+                <span>Status</span>
+                <span>Priority</span>
+                <span>Due date</span>
+                <span>Assignee</span>
+            </div>
+            <div class="list-row">
+                <span>Design new homepage</span><span>To Do</span><span class="priority high">High</span><span>Nov 10</span><span>AS</span>
+            </div>
+            <div class="list-row">
+                <span>Add pricing section</span><span>To Do</span><span class="priority medium">Medium</span><span>Nov 12</span><span>RK</span>
+            </div>
+            <div class="list-row">
+                <span>Create UI components</span><span>To Do</span><span class="priority low">Low</span><span>Nov 14</span><span>PS</span>
+            </div>
+            <div class="list-row">
+                <span>Build navbar component</span><span>In Progress</span><span class="priority high">High</span><span>Nov 16</span><span>NK</span>
+            </div>
+            <div class="list-row">
+                <span>Integrate API endpoints</span><span>In Progress</span><span class="priority medium">Medium</span><span>Nov 17</span><span>AK</span>
+            </div>
+            <div class="list-row">
+                <span>Update copy and content</span><span>Review</span><span class="priority medium">Medium</span><span>Nov 18</span><span>RM</span>
+            </div>
+            <div class="list-row">
+                <span>Fix responsive layout</span><span>Review</span><span class="priority low">Low</span><span>Nov 18</span><span>PS</span>
+            </div>
+            <div class="list-row">
+                <span>Set up project structure</span><span>Done</span><span class="priority low">Low</span><span>Nov 3</span><span>AS</span>
+            </div>
+            <div class="list-row">
+                <span>Create initial wireframes</span><span>Done</span><span class="priority medium">Medium</span><span>Nov 5</span><span>NK</span>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    const kanbanView = document.getElementById("kanbanView");
+    const listView = document.getElementById("listView");
+    const kanbanBoard = document.getElementById("kanbanBoard");
+    const taskListView = document.getElementById("taskListView");
+
+    kanbanView.addEventListener("click", () => {
+        kanbanBoard.hidden = false;
+        taskListView.hidden = true;
+        kanbanView.classList.add("active");
+        listView.classList.remove("active");
+    });
+
+    listView.addEventListener("click", () => {
+        kanbanBoard.hidden = true;
+        taskListView.hidden = false;
+        listView.classList.add("active");
+        kanbanView.classList.remove("active");
+    });
+
+    document.getElementById("newTaskBtn").addEventListener("click", () => {
+        alert("New Task button clicked. You can connect your task creation form here.");
+    });
+</script>
+</body>
+</html>
