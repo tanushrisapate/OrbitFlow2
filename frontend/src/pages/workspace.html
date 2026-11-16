@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orbit Flow | Workspaces</title>
+
+    <link rel="stylesheet" href="../css/workspace.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2 class="logo">
+                <i class="fa-solid fa-circle-nodes"></i>
+                Orbit Flow
+            </h2>
+
+            <nav class="sidebar-items">
+                <ul>
+
+                    <li class="item-list">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="item-list active">
+                        <a href="workspace.html">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            Workspaces
+                        </a>
+                    </li>
+
+                    <li class="item-list">
+                        <a href="#">
+                            <i class="fa-regular fa-folder"></i>
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="item-list">
+                        <a href="#">
+                            <i class="fa-regular fa-square-check"></i>
+                            Tasks
+                        </a>
+                    </li>
+
+                    <li class="item-list">
+                        <a href="#">
+                            <i class="fa-solid fa-chart-column"></i>
+                            Analytics
+                        </a>
+                    </li>
+
+                    <li class="item-list">
+                        <a href="#">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            Activity
+                        </a>
+                    </li>
+
+                    <li class="item-list">
+                        <a href="#">
+                            <i class="fa-solid fa-users"></i>
+                            Members
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+            <header class="top-bar">
+
+                <button class="top-noti">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-pic">
+                    TS
+                </button>
+
+            </header>
+
+
+            <!-- PAGE HEADING -->
+            <section class="page-heading">
+
+                <div class="heading-text">
+                    <h1>Workspaces</h1>
+                    <p>Create and manage your team workspaces.</p>
+                </div>
+
+                <button class="new-workspace">
+                    <i class="fa-solid fa-plus"></i>
+                    New Workspace
+                </button>
+
+            </section>
+
+
+            <!-- SEARCH AND VIEW OPTIONS -->
+            <section class="workspace-toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="searchWorkspace"
+                        placeholder="Search workspaces..."
+                    >
+
+                </div>
+
+                <div class="view-options">
+
+                    <button class="view-btn active" id="gridView">
+                        <i class="fa-solid fa-border-all"></i>
+                    </button>
+
+                    <button class="view-btn" id="listView">
+                        <i class="fa-solid fa-list"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- WORKSPACE CARDS -->
+            <section class="workspace-grid" id="workspaceGrid">
+
+
+                <!-- PRODUCT TEAM -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon product-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>Product Team</h3>
+
+                    <p class="workspace-details">
+                        4 projects <span>•</span> 8 members
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>AS</span>
+                        <span>RK</span>
+                        <span>PS</span>
+                        <span class="extra-members">+5</span>
+                    </div>
+
+                </div>
+
+
+                <!-- AI LAB -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon ai-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>AI Lab</h3>
+
+                    <p class="workspace-details">
+                        3 projects <span>•</span> 6 members
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>AK</span>
+                        <span>RM</span>
+                        <span>SK</span>
+                        <span class="extra-members">+3</span>
+                    </div>
+
+                </div>
+
+
+                <!-- HACKATHON -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon hackathon-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>Hackathon</h3>
+
+                    <p class="workspace-details">
+                        2 projects <span>•</span> 5 members
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>AS</span>
+                        <span>NK</span>
+                        <span>PS</span>
+                        <span class="extra-members">+2</span>
+                    </div>
+
+                </div>
+
+
+                <!-- RESEARCH -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon research-icon">
+                            <i class="fa-regular fa-clipboard"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>Research</h3>
+
+                    <p class="workspace-details">
+                        1 project <span>•</span> 4 members
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>RK</span>
+                        <span>AS</span>
+                        <span>PS</span>
+                        <span class="extra-members">+1</span>
+                    </div>
+
+                </div>
+
+
+                <!-- PLACEMENT PREP -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon placement-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>Placement Prep</h3>
+
+                    <p class="workspace-details">
+                        3 projects <span>•</span> 7 members
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>TS</span>
+                        <span>AK</span>
+                        <span>NK</span>
+                        <span class="extra-members">+4</span>
+                    </div>
+
+                </div>
+
+
+                <!-- PERSONAL -->
+                <div class="workspace-card">
+
+                    <div class="card-top">
+                        <div class="workspace-icon personal-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <h3>Personal</h3>
+
+                    <p class="workspace-details">
+                        1 project <span>•</span> 1 member
+                    </p>
+
+                    <div class="member-avatars">
+                        <span>TS</span>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- SEARCH AND GRID/LIST FUNCTIONALITY -->
+    <script>
+
+        const searchInput = document.getElementById("searchWorkspace");
+        const cards = document.querySelectorAll(".workspace-card");
+
+        searchInput.addEventListener("input", function () {
+
+            const searchValue = this.value.toLowerCase();
+
+            cards.forEach(card => {
+
+                const workspaceName = card.querySelector("h3").textContent.toLowerCase();
+
+                card.style.display = workspaceName.includes(searchValue)
+                    ? ""
+                    : "none";
+
+            });
+
+        });
+
+
+        const gridView = document.getElementById("gridView");
+        const listView = document.getElementById("listView");
+        const workspaceGrid = document.getElementById("workspaceGrid");
+
+        gridView.addEventListener("click", () => {
+
+            workspaceGrid.classList.remove("list-layout");
+
+            gridView.classList.add("active");
+            listView.classList.remove("active");
+
+        });
+
+        listView.addEventListener("click", () => {
+
+            workspaceGrid.classList.add("list-layout");
+
+            listView.classList.add("active");
+            gridView.classList.remove("active");
+
+        });
+
+    </script>
+
+</body>
+</html>

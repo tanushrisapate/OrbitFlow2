@@ -61,12 +61,16 @@ button{
   padding: 10px;
   border-radius: 7px;
 }
-button .hero-section .learn {
+.hero-buttons {
+  display:flex;
+  gap: 20px;
+}
+.hero-section button.learn {
   cursor: pointer;
-  border: none;
-  background: white;
   padding: 10px;
-  border-radius: 7px;
+  border-color: rgb(46, 117, 46);
+  border: 2px solid rgb(46, 117, 46);
+  background-color: white;
 }
 header .navbar {
   display: flex;
@@ -109,15 +113,19 @@ header .navbar {
   color: rgb(46, 117, 46);
 }
 .hero-section .desc {
-  font-size: 18px;
-  padding: 7px
+  font-size: 17px;
+  font-weight: 400;
+  padding: 7px;
+  gap:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .hero-section .login {
   color: white;
   padding: 20px;
 }
 .hero-section .learn-more {
-  border-color: rgb(46, 117, 46);
+  border-color: rgb(122, 192, 122);
   border-radius: 2%;
   color: black;
   padding: 20px; 
@@ -127,7 +135,7 @@ header .navbar {
 
 .feature-section {
   background-color: white;
-  padding: 40px 60px;
+  padding: 10px 80px;
 }
 
 .feature-section .feature-container {
